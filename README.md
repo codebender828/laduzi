@@ -1,4 +1,9 @@
+
 # Laduzi | 拉肚子 💩
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c6fce9c-1f08-4813-b0dd-047f1a3ff0ed/deploy-status)](https://app.netlify.com/sites/serene-neumann-393674/deploys)
+
+[View Demo](https://serene-neumann-393674.netlify.com/)
 
 > Introductory Tutorial on Vue.js, Vue Router and State Management with Vuex
 
