@@ -1,6 +1,6 @@
-# cool-json-app
+# Laduzi | 拉肚子 💩
 
-> A Vue.js project
+> Introductory Tutorial on Vue.js, Vue Router and State Management with Vuex
 
 ## Build Setup
 
