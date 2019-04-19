@@ -2,7 +2,6 @@
 
 > Introductory Tutorial on Vue.js, Vue Router and State Management with Vuex
 
-What you'll be building 😀
 ![laduzi](https://user-images.githubusercontent.com/21237954/56430843-42964080-62fa-11e9-8cf9-d89b0bde8d4b.gif)
 
 ## Build Setup
