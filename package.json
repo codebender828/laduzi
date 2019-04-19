@@ -1,7 +1,7 @@
 {
-  "name": "cool-json-app",
+  "name": "laduzi",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "An introductory tutorial in vue, vue-router and vuex",
   "author": "ME",
   "private": true,
   "scripts": {
