@@ -56,7 +56,10 @@ export default {
     }
   },
   beforeMount () {
-    this.getMoreUsers()
+    console.log('Users array', this.usersArray)
+    if ((!this.usersArray) || (this.usersArray && !this.usersArray.length)) {
+      this.getMoreUsers()
+    }
   }
 }
 </script>
