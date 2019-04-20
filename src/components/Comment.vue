@@ -94,4 +94,13 @@ export default {
   }
 }
 
+@media (max-width: 767.98px) {
+  .main {
+    .users {
+      width: auto;
+      padding: 0 16px;
+    }
+  }
+}
+
 </style>
