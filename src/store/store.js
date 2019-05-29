@@ -8,10 +8,10 @@ const store = new Vuex.Store({
       return state.users
     }
   },
-  state: {
+  // -----------------------------------------------------------------------------
+  state: () => ({
     users: undefined
-
-  },
+  }),
   mutations: {
     UPDATE_USER (state, users) {
       state.users = users
@@ -29,7 +29,6 @@ const store = new Vuex.Store({
         .then(users => commit('UPDATE_USER', users))
         .catch(err => console.error(err))
     }
-
   }
 })
 

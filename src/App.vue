@@ -18,7 +18,12 @@
 
 <script lang="js">
 export default {
-  name: 'App'
+  name: 'App',
+  created () {
+    this.$store.dispatch({
+      type: 'getUsers'
+    })
+  }
 }
 </script>
 

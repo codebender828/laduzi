@@ -9,17 +9,17 @@
         <button class="request-more" @click="getMoreUsers()">Get More Chefs</button>
       </div>
     </transition>
-    <comment :users="usersArray" @deleteUser="deleteUser"/>
+    <comments :users-array="usersArray" />
     </div>
   </main>
 </template>
 <script lang="js">
-import Comment from '../components/Comment'
+import Comments from '../components/Comment'
 
 export default {
   name: 'Food',
   components: {
-    Comment
+    Comments
   },
   data () {
     return {
@@ -42,13 +42,6 @@ export default {
     }
   },
   methods: {
-    deleteUser (user) {
-      console.log(user)
-      this.$store.commit({
-        type: 'DELETE_USER',
-        user
-      })
-    },
     getMoreUsers () {
       this.$store.dispatch({
         type: 'getUsers'
@@ -56,7 +49,6 @@ export default {
     }
   },
   beforeMount () {
-    console.log('Users array', this.usersArray)
     if ((!this.usersArray) || (this.usersArray && !this.usersArray.length)) {
       this.getMoreUsers()
     }

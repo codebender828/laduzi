@@ -1,24 +1,24 @@
 <template>
   <section class="users">
-    <div class="user" :key="index" v-for="(user, index) in users">
-      <div class="user-data">
-        <p><b>{{user.name}}</b></p>
-        <p>{{user.email}}</p>
-        <p>{{user.phone}}</p>
-      </div>
-      <button class="user-delete" @click="deleteMe(user)"> Delete </button>
-    </div>
+    <user :key="index" v-for="(user, index) in usersArray" :user="user" @deleteUser="deleteUser" />
   </section>
 </template>
 
 <script lang="js">
+import User from './user.vue'
+
 export default {
   name: 'Comment',
-  props: ['users'],
+  props: ['usersArray'],
+  components: {
+    User
+  },
   methods: {
-    deleteMe (option) {
-      console.log('deleting user', option)
-      this.$emit('deleteUser', option)
+    deleteUser (user) {
+      this.$store.commit({
+        type: 'DELETE_USER',
+        user
+      })
     }
   }
 }

@@ -11,8 +11,7 @@
 
 <script lang="js">
 export default {
-  name: 'Home',
-  mounted () {}
+  name: 'Home'
 }
 </script>
 
